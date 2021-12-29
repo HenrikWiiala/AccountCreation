@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang ="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Henrik Wiiala Account Creation</title>
+  </head>
+  <body>
+      Username: <span id="result1"></span><br>
+      Firstname: <span id="result2"></span><br>
+      Familyname: <span id="result3"></span><br>
+      Gender: <span id="result4"></span><br>
+      Age: <span id="result5"></span><br>
+      Address: <span id="result6"></span><br>
+      Postal-code: <span id="result7"></span><br>
+      City: <span id="result8"></span><br>
+  </body>
+  <script>
+      document.getElementById("result1").innerHTML=localStorage.getItem("username");
+      document.getElementById("result2").innerHTML=localStorage.getItem("firstname");
+      document.getElementById("result3").innerHTML=localStorage.getItem("familyname");
+      document.getElementById("result4").innerHTML=localStorage.getItem("gender");
+      document.getElementById("result5").innerHTML=localStorage.getItem("age");
+      document.getElementById("result6").innerHTML=localStorage.getItem("address");
+      document.getElementById("result7").innerHTML=localStorage.getItem("postal-code");
+      document.getElementById("result8").innerHTML=localStorage.getItem("city");
+  </script>
+  </html>
